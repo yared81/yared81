@@ -1,4 +1,6 @@
+<h1 align="center">Hi 👋, I'm Yared</h1>
 # 💫 About Me:
+
 I'm currently working on web development projects and always exploring new tools and frameworks. I'm open to collaborating on anything related to web development — frontend, backend, or full-stack. Let's build something cool together!
 
 
