@@ -117,5 +117,5 @@ const yared = {
 ║     and turning ideas into products.                     ║
 ╚══════════════════════════════════════════════════════════╝
 ```
-![Wave](https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=00ff88&height=80&section=footer)
 </div>
