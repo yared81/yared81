@@ -1,1 +1,132 @@
+<svg width="100%" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Yared Azene - Full-Stack Developer &amp; Backend Engineer</title>
+  <desc>Cyberpunk-themed animated banner</desc>
+  <defs>
+    <filter id="glow-green" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="banner-clip"><rect width="800" height="200"/></clipPath>
+    <clipPath id="marquee-clip"><rect x="0" y="148" width="800" height="24"/></clipPath>
+    <style>
+      @keyframes flicker {
+        0%,19%,21%,23%,25%,54%,56%,100%{opacity:1}
+        20%,24%,55%{opacity:0.4}
+      }
+      @keyframes scan {
+        0%{transform:translateY(0);opacity:0.15}
+        100%{transform:translateY(200px);opacity:0}
+      }
+      @keyframes marquee {
+        0%{transform:translateX(820px)}
+        100%{transform:translateX(-1100px)}
+      }
+      @keyframes cornerGlow {
+        0%,100%{opacity:0.4}50%{opacity:1}
+      }
+      .title-animate{animation:flicker 4s infinite 1s}
+      .scan-anim{animation:scan 3s linear infinite}
+      .marquee-text{animation:marquee 14s linear infinite}
+      .ca{animation:cornerGlow 2s ease-in-out infinite}
+    </style>
+  </defs>
 
+  <rect width="800" height="200" fill="#0a0a0f"/>
+
+  <!-- Grid -->
+  <g clip-path="url(#banner-clip)" opacity="0.08">
+    <line x1="0" y1="25" x2="800" y2="25" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="50" x2="800" y2="50" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="75" x2="800" y2="75" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="125" x2="800" y2="125" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="0" y1="175" x2="800" y2="175" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="200" stroke="#00ff88" stroke-width="0.5"/>
+  </g>
+
+  <rect x="0" y="0" width="800" height="2" fill="#00ff88" opacity="0.06" class="scan-anim"/>
+
+  <!-- Borders -->
+  <line x1="0" y1="0" x2="0" y2="200" stroke="#00ff88" stroke-width="2" opacity="0.8"/>
+  <line x1="799" y1="0" x2="799" y2="200" stroke="#bf00ff" stroke-width="2" opacity="0.8"/>
+  <line x1="0" y1="0" x2="800" y2="0" stroke="#00ff88" stroke-width="1.5" opacity="0.5"/>
+  <line x1="0" y1="199" x2="800" y2="199" stroke="#bf00ff" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Corner brackets -->
+  <polyline points="12,40 12,12 40,12" fill="none" stroke="#00ff88" stroke-width="1.5" class="ca" style="animation-delay:0s"/>
+  <polyline points="760,12 788,12 788,40" fill="none" stroke="#00ff88" stroke-width="1.5" class="ca" style="animation-delay:0.5s"/>
+  <polyline points="12,160 12,188 40,188" fill="none" stroke="#00ff88" stroke-width="1.5" class="ca" style="animation-delay:1s"/>
+  <polyline points="760,188 788,188 788,160" fill="none" stroke="#00ff88" stroke-width="1.5" class="ca" style="animation-delay:1.5s"/>
+
+  <!-- Pulse left -->
+  <circle cx="58" cy="100" r="3" fill="#00ff88" opacity="0.9"/>
+  <circle cx="58" cy="100" fill="none" stroke="#00ff88" stroke-width="1">
+    <animate attributeName="r" from="3" to="18" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.8" to="0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Pulse right -->
+  <circle cx="742" cy="100" r="3" fill="#bf00ff" opacity="0.9"/>
+  <circle cx="742" cy="100" fill="none" stroke="#bf00ff" stroke-width="1">
+    <animate attributeName="r" from="3" to="18" dur="2s" begin="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" from="0.8" to="0" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Dot columns left -->
+  <circle cx="30" cy="60" r="2" fill="#00ff88"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.3s" repeatCount="indefinite"/></circle>
+  <circle cx="30" cy="80" r="2" fill="#00e5ff"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.1s" repeatCount="indefinite"/></circle>
+  <circle cx="30" cy="100" r="2" fill="#bf00ff"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.7s" repeatCount="indefinite"/></circle>
+  <circle cx="30" cy="120" r="2" fill="#00ff88"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="0.9s" repeatCount="indefinite"/></circle>
+  <circle cx="30" cy="140" r="2" fill="#00e5ff"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.5s" repeatCount="indefinite"/></circle>
+
+  <!-- Dot columns right -->
+  <circle cx="770" cy="60" r="2" fill="#bf00ff"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.4s" repeatCount="indefinite"/></circle>
+  <circle cx="770" cy="80" r="2" fill="#00ff88"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.2s" repeatCount="indefinite"/></circle>
+  <circle cx="770" cy="100" r="2" fill="#00e5ff"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.8s" repeatCount="indefinite"/></circle>
+  <circle cx="770" cy="120" r="2" fill="#00ff88"><animate attributeName="opacity" values="0.9;0.2;0.9" dur="1.0s" repeatCount="indefinite"/></circle>
+  <circle cx="770" cy="140" r="2" fill="#bf00ff"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="1.6s" repeatCount="indefinite"/></circle>
+
+  <!-- Top label -->
+  <text x="400" y="30" text-anchor="middle" font-family="'Courier New',monospace" font-size="10" fill="#00e5ff" letter-spacing="6" opacity="0.7">[ INITIALIZING SYSTEM ]</text>
+
+  <!-- Main name -->
+  <text x="400" y="98" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="42" font-weight="700"
+    fill="#00ff88" class="title-animate" filter="url(#glow-green)">YARED AZENE</text>
+
+  <!-- Divider -->
+  <line x1="120" y1="108" x2="680" y2="108" stroke="#bf00ff" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="128" text-anchor="middle"
+    font-family="'Courier New',monospace" font-size="11"
+    fill="#bf00ff" letter-spacing="3" filter="url(#glow-purple)">FULL-STACK DEVELOPER  ·  BACKEND ENGINEER</text>
+
+  <!-- Marquee strip -->
+  <rect x="0" y="148" width="800" height="24" fill="#0d0d1a"/>
+  <line x1="0" y1="148" x2="800" y2="148" stroke="#00ff88" stroke-width="0.8" opacity="0.5"/>
+  <line x1="0" y1="172" x2="800" y2="172" stroke="#00ff88" stroke-width="0.8" opacity="0.5"/>
+  <g clip-path="url(#marquee-clip)">
+    <text class="marquee-text" y="164"
+      font-family="'Courier New',monospace" font-size="11" fill="#00e5ff" letter-spacing="2">
+      ◈  React  ◈  Node.js  ◈  PostgreSQL  ◈  Supabase  ◈  Python  ◈  TypeScript  ◈  Flutter  ◈  Docker  ◈  REST APIs  ◈  Real-time Systems  ◈  Laravel  ◈  MongoDB
+    </text>
+  </g>
+
+  <!-- Status bar -->
+  <text x="55" y="192" font-family="'Courier New',monospace" font-size="9" fill="#00ff88" opacity="0.6">STATUS: ONLINE</text>
+  <circle cx="122" cy="189" r="3" fill="#00ff88"><animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite"/></circle>
+  <text x="400" y="192" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#bf00ff" opacity="0.5">◄ BUILDING THE FUTURE, ONE COMMIT AT A TIME ►</text>
+  <text x="745" y="192" font-family="'Courier New',monospace" font-size="9" fill="#00ff88" opacity="0.6">v2.0.26</text>
+</svg>
