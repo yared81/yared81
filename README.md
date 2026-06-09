@@ -20,8 +20,7 @@ const yared = {
     "Scalable backend architecture",
     "Real-time systems",
   ],
-  currentlyBuilding: "Scalable apps with React, Next.js, Node.js & Laravel",
-  funFact: "I turn coffee ☕ into production-ready software"
+  currentlyBuilding: "Scalable apps with React, Next.js, Node.js & Laravel"  
 };
 ```
 
