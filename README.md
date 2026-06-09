@@ -7,17 +7,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=00FF88&center=true&vCenter=true&width=700&height=45&lines=Yared+Azene+%7C+Full-Stack+Developer;Building+scalable+backend+systems;React+%7C+Node.js+%7C+PostgreSQL+%7C+Supabase;Turning+ideas+into+production-ready+software+%E2%9A%A1" alt="Typing SVG"/>
 
 </div>
-
----
-
-<div align="center">
-
-![GitHub followers](https://img.shields.io/github/followers/yared81?color=bf00ff&style=flat-square&logo=github&label=FOLLOWERS)
-
-</div>
-
----
-
+ 
 ## 💫 About Me
 
 ```javascript
@@ -127,9 +117,5 @@ const yared = {
 ║     and turning ideas into products.                     ║
 ╚══════════════════════════════════════════════════════════╝
 ```
-
 ![Wave](https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg)
-
 </div>
-
-<!-- Crafted with ⚡ by Yared Azene -->
