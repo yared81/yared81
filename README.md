@@ -117,5 +117,4 @@ const yared = {
 ║     and turning ideas into products.                     ║
 ╚══════════════════════════════════════════════════════════╝
 ```
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=00ff88&height=80&section=footer)
 </div>
